@@ -1,0 +1,6 @@
+{
+  "name": "PocketFlash",
+  "description": "Rootless microSD OS flasher for retro handhelds (Knulli, Spruce, nxRedux) and FAT32, exFAT, and NTFS formatter over USB OTG.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

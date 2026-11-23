@@ -1,0 +1,23 @@
+{
+  "name": "CFW Studio",
+  "short_name": "CFW Studio",
+  "description": "Rootless microSD OS flasher for retro handhelds and FAT32, exFAT, and NTFS formatter over USB OTG.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "icons": [
+    {
+      "src": "/assets/branding/cfw-studio-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/branding/cfw-studio-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
