@@ -15,9 +15,7 @@ export function resolveInitialTheme(
 export function loadStoredTheme(): ThemeMode {
   if (typeof window === 'undefined') return 'light';
   try {
-    const stored =
-      window.localStorage.getItem(THEME_STORAGE_KEY) ??
-      window.localStorage.getItem('pocketflash_theme');
+    const stored = window.localStorage.getItem(THEME_STORAGE_KEY);
     const prefersDark =
       typeof window.matchMedia === 'function' &&
       window.matchMedia('(prefers-color-scheme: dark)').matches;

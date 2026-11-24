@@ -390,12 +390,14 @@ export function OtgGuideWorkspace({
             <div className="space-y-2">
               <div className="flex items-center justify-between text-xs">
                 <span className="font-semibold text-slate-900 dark:text-slate-100">App Icon</span>
-                <span className="font-mono text-slate-500 dark:text-slate-400">512×512</span>
+                <span className="font-mono text-slate-500 dark:text-slate-400">Up to 2048²</span>
               </div>
               <div className="flex items-center justify-center rounded-lg border border-slate-200 bg-slate-100 p-4 dark:border-slate-800 dark:bg-slate-900">
                 <img
                   src="/assets/branding/cfw-studio-icon-512.png"
+                  srcSet="/assets/branding/cfw-studio-icon-192.png 1x, /assets/branding/cfw-studio-icon-512.png 2x, /assets/branding/cfw-studio-icon-1024.png 3x"
                   alt="CFW Studio square app icon"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   className="h-24 w-24 object-contain"
                 />
@@ -403,12 +405,19 @@ export function OtgGuideWorkspace({
             </div>
             <div className="flex flex-wrap items-center gap-3 text-xs">
               <a
-                href="/assets/branding/cfw-studio-icon-512.png"
-                download="cfw-studio-icon-512.png"
+                href="/assets/branding/cfw-studio-icon-2048.png"
+                download="cfw-studio-icon-2048.png"
                 className="inline-flex items-center gap-1 font-semibold text-blue-700 hover:underline dark:text-blue-400"
               >
                 <Download className="h-3.5 w-3.5" aria-hidden="true" />
-                <span>512px PNG</span>
+                <span>2048px</span>
+              </a>
+              <a
+                href="/assets/branding/cfw-studio-icon-512.png"
+                download="cfw-studio-icon-512.png"
+                className="inline-flex items-center gap-1 font-semibold text-slate-600 hover:text-slate-900 hover:underline dark:text-slate-400 dark:hover:text-slate-200"
+              >
+                <span>512px</span>
               </a>
               <a
                 href="/assets/branding/cfw-studio-icon-192.png"
@@ -426,10 +435,11 @@ export function OtgGuideWorkspace({
                 <span className="font-semibold text-slate-900 dark:text-slate-100">App Thumbnail (OpenGraph 16:9)</span>
                 <span className="font-mono text-slate-500 dark:text-slate-400">1280×720</span>
               </div>
-              <div className="overflow-hidden rounded-lg border border-slate-200 bg-slate-950 dark:border-slate-800">
+              <div className="overflow-hidden rounded-lg border border-slate-200 bg-[#040718] dark:border-slate-800">
                 <img
                   src="/assets/branding/cfw-studio-thumbnail.png"
                   alt="CFW Studio 16:9 application thumbnail banner"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   className="aspect-video w-full object-cover"
                 />
@@ -448,13 +458,14 @@ export function OtgGuideWorkspace({
           <div className="md:col-span-4 rounded-lg border border-slate-200 bg-slate-50/70 p-4 flex flex-col justify-between gap-3 dark:border-slate-800 dark:bg-slate-950/60">
             <div className="space-y-2">
               <div className="flex items-center justify-between text-xs">
-                <span className="font-semibold text-slate-900 dark:text-slate-100">Enhanced Wordmark</span>
+                <span className="font-semibold text-slate-900 dark:text-slate-100">Brand Lockup (Logo + Wordmark)</span>
                 <span className="font-mono text-slate-500 dark:text-slate-400">1200×600</span>
               </div>
-              <div className="overflow-hidden rounded-lg border border-slate-200 bg-slate-950 dark:border-slate-800">
+              <div className="overflow-hidden rounded-lg border border-slate-200 bg-[#040718] dark:border-slate-800">
                 <img
                   src="/assets/branding/cfw-studio-wordmark.png"
-                  alt="Enhanced CFW Studio wordmark banner"
+                  alt="CFW Studio logo and wordmark banner"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   className="aspect-2/1 w-full object-cover"
                 />
@@ -466,7 +477,7 @@ export function OtgGuideWorkspace({
               className="inline-flex items-center gap-1 text-xs font-semibold text-blue-700 hover:underline dark:text-blue-400 self-start"
             >
               <Download className="h-3.5 w-3.5" aria-hidden="true" />
-              <span>Download Wordmark PNG</span>
+              <span>Download Lockup PNG</span>
             </a>
           </div>
         </div>

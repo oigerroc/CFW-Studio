@@ -30,10 +30,12 @@ export function TopNav({ activeView, onNavigate, onOpenConnectModal }: TopNavPro
             className="inline-flex items-center gap-2.5 font-display text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-blue-600"
           >
             <img
-              src="/assets/branding/cfw-studio-icon-64.png"
+              src="/assets/branding/cfw-studio-icon-128.png"
+              srcSet="/assets/branding/cfw-studio-icon-64.png 1x, /assets/branding/cfw-studio-icon-128.png 2x, /assets/branding/cfw-studio-icon-192.png 3x"
               alt=""
               width={28}
               height={28}
+              decoding="async"
               referrerPolicy="no-referrer"
               className="h-7 w-7 rounded-md shrink-0"
             />

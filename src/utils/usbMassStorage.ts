@@ -413,9 +413,7 @@ const STORAGE_KEY = 'cfw_studio_targets_v2';
 export function loadPersistedVirtualCards(): StorageTarget[] {
   if (typeof window === 'undefined') return DEFAULT_VIRTUAL_CARDS;
   try {
-    const raw =
-      window.localStorage.getItem(STORAGE_KEY) ??
-      window.localStorage.getItem('pocketflash_targets_v2');
+    const raw = window.localStorage.getItem(STORAGE_KEY);
     if (!raw) return DEFAULT_VIRTUAL_CARDS;
     const parsed: unknown = JSON.parse(raw);
     if (!Array.isArray(parsed)) return DEFAULT_VIRTUAL_CARDS;
